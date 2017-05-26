@@ -1,0 +1,141 @@
+/*
+ Theme Name: iTek Child Theme
+ Theme URI: https://localhost:8888/huynhduy/
+ Description: Theme for ishop
+ Author: devmob
+ Author URI: https://www.facebook.com/huynh.duy.902
+ Template: itek
+ Version: 0.1
+ */
+@import url("../itek/style.css");
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: normal;
+}
+/**
+ * Trang hiển thị chi tiết sản phẩm
+ */
+.entry-header {
+    display: block;
+    overflow: auto;
+}
+.entry-header .left {
+    float: left;
+    margin-right: 1em;
+    width: 53%;
+}
+.entry-header .right {
+    float: right;
+    width: 42%;
+}
+.entry-price {
+    font-weight: bold;
+    color: #1dad1d;
+    font-size: 1.6em;
+}
+
+.sanpham_att_table  {border-collapse:collapse;border-spacing:0;width: 100%;}
+.sanpham_att_table td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.sanpham_att_table th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.sanpham_att_table .sanpham_att_table_row{vertical-align:top}
+.dathang-modal-link {
+    background-color: #DA4453;
+    border-color: #DA4453;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #f3f3f3;
+}
+
+/**
+ * CSS hiển thị trang lưu trữ sản phẩm theo dạng lưới
+ */
+.post-type-archive-sanpham .main-content-inner,
+.tax-sanpham_cat .main-content-inner,
+.home .main-content-inner{
+
+}
+.post-type-archive-sanpham .main-content-inner .odd {
+    width: 48.5%;
+    float: left;
+}
+.post-type-archive-sanpham .main-content-inner .even {
+    width: 49.5%;
+    float: right;
+}
+.post-type-archive-sanpham .main-content-inner .even:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.paging-navigation {
+    overflow: auto;
+    width: 100%;
+}
+.post-type-archive-sanpham .main-content-inner .hentry {
+    background: #fff;
+    margin-bottom: 1em;
+
+}
+.post-type-archive-sanpham .blog-item-wrap {
+    margin-bottom: 0;
+}
+.post-type-archive-sanpham .post-inner-content {
+    border: none !important;
+}
+.post-type-archive-sanpham .post-inner-content .entry-title {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+/* This is gonna define the layout of search box */
+@media screen and (min-width: 700px) {
+    .header-search {
+        margin-top: 10px;
+        margin-bottom: -15px;
+        padding: 0px;
+
+    }}
+.search-field{
+    height: 31px;
+    width: 100%;
+    font-size: 13px;
+    margin: 0px;
+    outline: none;
+    display: table-cell;
+    padding: 0 30px 0 10px;
+    border-color: #EBF0F1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.devmob-btn-search {
+    margin-bottom: 20px;
+    margin-left: -5px;
+    height: 30px;
+    outline: none;
+    display: table-cell;
+    border: none;
+}
